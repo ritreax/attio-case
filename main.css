@@ -476,7 +476,7 @@ main {
     width: 980px;
     z-index: 1000;
     position: fixed;
-    right: 0;
+    right: -100%;
     top: 0;
     bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 25px;
@@ -582,10 +582,11 @@ main {
                         height: 22px;
                     }
                 }
-                .item:last-child{
+
+                .item:last-child {
                     opacity: 0.4;
                 }
-            
+
             }
 
             .right-side {
@@ -601,11 +602,13 @@ main {
                     gap: .5rem;
                     color: #474747;
                     font-weight: 500;
+
                     .profile {
                         display: flex;
                         align-items: center;
                         gap: 0.25rem;
-                        img{
+
+                        img {
                             border-radius: 999px;
                             width: 22px;
                         }
@@ -615,21 +618,24 @@ main {
             }
         }
 
-        .comment{
+        .comment {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 0;
             border-block: 1px solid var(--border-color);
-            img{
+
+            img {
                 width: 28px;
                 border-radius: 999px;
             }
-            input{
+
+            input {
                 width: 100%;
             }
-            input:focus{
-                outline:none;
+
+            input:focus {
+                outline: none;
             }
         }
     }
